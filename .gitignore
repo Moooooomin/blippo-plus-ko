@@ -1,0 +1,6 @@
+backup/
+src/backup/
+__pycache__/
+*.pyc
+*.tsv
+.DS_Store
