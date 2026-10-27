@@ -4,11 +4,20 @@ Steam판 [Blippo+](https://store.steampowered.com/app/3323850/Blippo/)(블리포
 자막, 에피소드 제목·설명, 펨토팩스 게시판, 메뉴까지 게임 안의 텍스트 7,696개를 번역했습니다.
 
 **다운로드: [Releases에서 최신 버전 받기](https://github.com/Moooooomin/blippo-plus-ko/releases/latest)** (`Blippo-plus-ko-v1.1.zip`)
+게임 소개와 설치 안내는 블로그 글 [Blippo+ 한글 패치 – 블리포+ 게임 소개와 설치 방법](https://lavient.life/blippo-plus-korean-patch/)에도 정리해 두었습니다.
 
 - 대상: **Windows Steam판** (맥·스위치·플레이데이트판은 지원하지 않습니다)
 - 언어: 게임의 "유럽 스페인어" 자리에 한국어를 넣습니다
 - 글꼴: 게임에 이미 들어 있는 픽셀 글꼴(GNU Unifont)로 한글을 표시합니다
 - 영상·음성은 건드리지 않고 텍스트만 바꿉니다
+
+## 스크린샷
+
+| 편성표 | 방송 정보 |
+|---|---|
+| <img src="docs/program-guide-ko.jpg" alt="한글 패치 적용 후 편성표 – 프로그램 제목이 한글로 나온 화면"> | <img src="docs/episode-info-ko.jpg" alt="한글 패치 적용 후 방송 정보 띠 – 제목과 에피소드 설명이 한글로 표시된 화면"> |
+
+<p align="center"><img src="docs/subtitle-ko.jpg" alt="스몰 토크 방송에 한국어 자막이 나온 장면" width="640"><br>한국어 자막</p>
 
 ## 설치 방법
 
@@ -19,6 +28,8 @@ Steam판 [Blippo+](https://store.steampowered.com/app/3323850/Blippo/)(블리포
 5. 창 위쪽에 게임 폴더가 자동으로 잡혔는지 확인하고 **[한글 패치 설치]**를 누릅니다.
 6. 5~15분 정도 걸립니다. 진행 막대가 끝날 때까지 창을 닫지 마세요.
 7. 게임을 실행하고 **Options → Language → 한국어**를 선택합니다.
+
+<p align="center"><img src="docs/installer.jpg" alt="Blippo+ 한글패치.exe 설치 프로그램 창 – 게임 폴더 경로와 다시 설치, 원본으로 되돌리기, 설치 확인 버튼" width="420"><br>설치 프로그램 화면</p>
 
 게임 폴더를 못 찾으면 **[찾아보기…]**로 직접 고르세요.
 Steam 라이브러리 → Blippo+ 우클릭 → 관리 → 로컬 파일 보기에서 열리는 폴더가 게임 폴더입니다.
@@ -71,6 +82,7 @@ python src/blippo_ko.py restore                              # 되돌리기
 | 경로 | 내용 |
 |---|---|
 | `blippo_ko.json` | 번역문. 항목마다 `asset`·`path`(게임 안 위치)와 `ko`(한국어)만 들어 있습니다 |
+| `docs/` | README에 쓰는 스크린샷 |
 | `src/blippo_ko.py` | 실제로 게임 파일을 고치는 부분 (UnityPy) |
 | `src/blippo_ko_gui.py` | 설치 프로그램 창 |
 
